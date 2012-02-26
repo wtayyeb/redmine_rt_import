@@ -2,6 +2,6 @@
 en:
   my_label: "My Label"
   prefix_label: "Prefix"
-  leaves_label: "Create Leaves as issues"
+  leaves_label: "Create Leaves as issues (for cvs only)"
   upload_file_label: "XML(mpp exported) file"
   import_projects_label: "Import projects and issues"
