@@ -1,0 +1,22 @@
+<h2><%=l(:import_projects_label)%></h2>
+
+<div class="box">
+<% form_tag({:controller => 'rtimport', :action => 'import'}, :multipart => 
+true, :class => "tabular", :'accept-charset' => "ISO-8859-7") do %>
+
+<%= hidden_field_tag('prefix', @prefix) %>
+<%= hidden_field_tag('local_path', @local_path) %>
+<%= hidden_field_tag('original_path', @original_path) %>
+
+<% @project_fields.each do |pf| %>
+<% if pf != 'id' %>
+<div>
+<%= pf %>
+</div>
+<% end %>
+<% end %>
+
+
+</div>
+<%= submit_tag l(:button_add) %>
+<% end %> 

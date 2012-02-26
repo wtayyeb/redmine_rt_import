@@ -1,0 +1,23 @@
+<h2><%=l(:import_projects_label)%></h2>
+
+<div class="box">
+<% form_tag({:controller => 'rtimport', :action => 'import'}, :multipart => 
+true, :class => "tabular", :'accept-charset' => "ISO-8859-7") do %>
+
+<span id="attachments_fields">
+<label class="inline"><span id="attachment_description_label_content" style="width: 400px;"><%= l(:upload_file_label) %></span>
+<%= file_field_tag 'uploaded_file', :size => 30, :id => nil  -%>
+</label>
+<br />
+<label class="inline"><span id="attachment_description_label_content" style="margin-right: 167px;"><%= 
+l(:prefix_label) %></span><%= text_field_tag 'prefix', '', :size => 20, :id => nil %>
+</label>
+<br />
+<label class="inline"><span id="attachment_description_label_content" style="margin-right: 53px;"><%= l(:leaves_label) %></span>
+<%= check_box_tag 'create_issues', :size => 30, :id => nil  -%>
+</label>
+</span>
+<br />
+</div>
+<%= submit_tag l(:button_add) %>
+<% end %> 

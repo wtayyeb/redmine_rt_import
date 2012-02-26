@@ -1,0 +1,7 @@
+# English strings go here for Rails i18n
+en:
+  my_label: "My label"
+  prefix_label: "Prefix"
+  leaves_label: "Create leaves as issues"
+  upload_file_label: "XML(mpp exported) file"
+  import_projects_label: "Import projects and issues"
