@@ -21,3 +21,9 @@ Like other plugins as easy as drink a glass of water.
 3. Restart the redmine service.
 4. enjoy!
 
+
+Usage
+----
+
+go to Administration Menu in Redmine and then click on msProject Task Importer.
+Select your msProject XML file and then click upload.

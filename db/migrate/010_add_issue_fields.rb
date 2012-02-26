@@ -7,3 +7,4 @@ class AddIssueFields < ActiveRecord::Migration
     remove_column :issues, :rt_identifier
   end
 end
+
